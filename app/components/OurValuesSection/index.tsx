@@ -23,8 +23,8 @@ export const OurValues: React.FC<OurValuesProps> = async ({ values }) => {
               className={style.value_image}
               src={`https:${value.fields.symbol.fields.file.url}`}
               alt={value.fields.title}
-              width={value.fields.symbol.fields.file.details.image.width}
-              height={value.fields.symbol.fields.file.details.image.height}
+              width={100}
+              height={100}
             ></Image>
             <h4 className={`title title--extra-small ${style.value_text}`}>
               {value.fields.title}

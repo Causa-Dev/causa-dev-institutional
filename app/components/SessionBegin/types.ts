@@ -4,5 +4,5 @@ export interface BeginValues {
   id: string
   title: string
   about: string
-  image: ImageType
+  logoBgs: ImageType[]
 }

@@ -1,9 +1,15 @@
 .about {
   --paddingTop: 4.75rem;
-  background: var(--gradiente-light);
+  background: var(--background-light);
   margin-top: calc(var(--paddingTop) / -2);
   padding-bottom: 20rem;
   padding-top: var(--paddingTop);
+}
+
+.about p,
+.about h2,
+.about h3 {
+  color: var(--neutral-white);
 }
 
 .layout_about {

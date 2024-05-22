@@ -50,7 +50,7 @@ export const Testimonials: React.FC<TestimonialsProps> = ({ values }) => {
     }
   }, [])
   return (
-    <section className={style.testimonials}>
+    <section id="projetos" className={style.testimonials}>
       <h2 className={`title ${style.title}`}>{testimonialsContent.title}</h2>
       <h3 className={`title--extra-small`}>
         {testimonialsContent.description}

@@ -22,16 +22,8 @@ export const Card: React.FC<CardProps> = ({ testimonial, quotationMark }) => {
         width={testimonial.image.fields.file.details.image.width}
         height={testimonial.image.fields.file.details.image.height}
       />
-      <div className={styles.voluntary_img_filter}></div>
       <p className={`${styles.name} text2`}>{testimonial.name}</p>
       <p className={`${styles.office} text2`}>{testimonial.office}</p>
-      <Image
-        className={styles.quotation}
-        src={`https:${quotationMark.fields.file.url}`}
-        alt={quotationMark.fields.description}
-        width={quotationMark.fields.file.details.image.width}
-        height={quotationMark.fields.file.details.image.height}
-      />
       <p
         className={`${styles.text_testimonial} regular-text `}
         dangerouslySetInnerHTML={{

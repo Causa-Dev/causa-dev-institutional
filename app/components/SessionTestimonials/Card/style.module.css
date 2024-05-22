@@ -48,22 +48,10 @@
   height: var(--image-size);
   object-fit: cover;
   border: var(--border-size) solid var(--neutral-white);
+  background: var(--neutral-white);
   position: absolute;
   top: calc(var(--image-size) / -2);
   margin-bottom: 20px;
-}
-
-.voluntary_img_filter {
-  content: '';
-  width: var(--filter-size);
-  height: var(--filter-size);
-  border-radius: 100%;
-  top: calc(var(--filter-size) / -2);
-  position: absolute;
-  background-color: var(--primary-extra-light);
-  align-self: center;
-  margin-inline: auto;
-  mix-blend-mode: color;
 }
 
 .quotation {
@@ -78,7 +66,7 @@
 
 @media (min-width: 48em) {
   .office {
-    margin-bottom: 0;
+    margin-bottom: 1.5rem;
   }
   .card {
     min-width: 310px;

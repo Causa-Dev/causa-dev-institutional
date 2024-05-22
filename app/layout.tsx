@@ -8,8 +8,8 @@ import { Nunito_Sans } from 'next/font/google'
 const nunitoSans = Nunito_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Tech Pro Bem',
-  description: 'Site institucional da Tech Pro Bem',
+  title: 'Causa Dev',
+  description: 'Site institucional do Causa Dev',
 }
 
 export default function RootLayout({

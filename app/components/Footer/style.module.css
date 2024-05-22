@@ -1,5 +1,5 @@
 .footer {
-  background: var(--gradiente-light);
+  background: var(--background-light);
   word-break: break-word;
   padding-top: 20rem;
   margin-top: -16rem;
@@ -10,6 +10,10 @@
 .infoContainer {
   padding: 4rem 0;
   gap: 3rem;
+}
+
+.infoContainer h2 {
+  color: var(--neutral-white);
 }
 
 .infoContainer,
@@ -64,19 +68,20 @@
   display: block;
   margin-bottom: 0.5rem;
 
-  color: var(--neutral-gray-darkest);
+  color: var(--neutral-white);
   text-wrap: wrap;
 }
 
 .infoField {
   display: inline-flex;
   gap: 0.5rem;
-
+  color: var(--neutral-white);
   line-height: 1.375;
 }
 
 .infoField img {
   width: 1.5rem;
+  filter: brightness(0) invert(1);
 }
 
 .logoContainer {
@@ -85,7 +90,7 @@
 }
 
 .tpblogo {
-  width: 9.75rem;
+  width: 6rem;
   margin: auto;
 }
 
