@@ -5,6 +5,7 @@ export interface testimonialsType {
   office: string
   testimony: string
   image: ImageType
+  detailsText: any
 }
 
 export interface testimonialsContentType {

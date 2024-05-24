@@ -1,0 +1,148 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  overflow: auto;
+  padding: 100px 0;
+}
+
+.modalContent * {
+  white-space: pre-line;
+}
+
+.modalContent {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 50%;
+  min-width: 400px;
+  text-align: left;
+  position: relative;
+  margin-top: 100px;
+  height: fit-content;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.closeButton svg {
+  font-size: 1.5rem;
+}
+
+.modalContent h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  background-image: linear-gradient(to right, var(--secondary-light), var(--secondary-light));
+  background-size: 10em 0.2em;
+  background-repeat: no-repeat;
+  background-position: 0 88%;
+  padding-bottom: 0.5rem;
+}
+
+.modalContent h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.modalContent h3 {
+  background-image: linear-gradient(to right, var(--secondary-light), var(--secondary-light));
+  background-size: 12em 0.1em;
+  background-repeat: no-repeat;
+  background-position: 0 88%;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.modalContent p {
+  color: var(--neutral-gray-darkest);
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+.modalContent ul,
+.modalContent ol {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.modalContent ul li::marker,
+.modalContent ol li::marker {
+  color: var(--secondary-light);
+}
+
+.modalContent blockquote {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border-left: 4px solid var(--secondary-light);
+  background-color: var(--neutral-gray-lightest);
+  color: var(--neutral-gray-darkest);
+  font-style: italic;
+}
+
+.modalContent img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.modalContent a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  color: var(--neutral-white);
+  background-color: var(--primary);
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.modalContent a:hover {
+  background-color: var(--primary-dark);
+}
+
+@media (min-width: 48em) {
+  .modalContent {
+    padding: 2rem;
+  }
+
+  .closeButton {
+    font-size: 1.5rem;
+  }
+
+  .closeButton svg {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 80em) {
+  .modalContent {
+    padding: 2.5rem;
+  }
+
+  .closeButton {
+    font-size: 2rem;
+  }
+
+  .closeButton svg {
+    font-size: 2rem;
+  }
+}

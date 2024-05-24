@@ -7,8 +7,9 @@ import { ImageType } from '@/app/protocols'
 interface CardProps {
   testimonial: testimonialsType
   quotationMark: ImageType
+  onDetailsClick: () => void
 }
-export const Card: React.FC<CardProps> = ({ testimonial, quotationMark }) => {
+export const Card: React.FC<CardProps> = ({ testimonial, onDetailsClick }) => {
   const testimony = testimonial.testimony.replace(
     /__(.*?)__/g,
     '<strong>$1</strong>',
@@ -30,6 +31,9 @@ export const Card: React.FC<CardProps> = ({ testimonial, quotationMark }) => {
           __html: testimony,
         }}
       ></p>
+      <button className={styles.detailsButton} onClick={onDetailsClick}>
+        Detalhes
+      </button>
     </article>
   )
 }
