@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
@@ -20,9 +21,11 @@ export const ProjectDetailsModal: React.FC<ProjectDetailsModalProps> = ({
   if (!isOpen || !testimonial) return null
 
   const markdownContent = testimonial.detailsText.content
-    .map((node) => {
+    .map((node: any) => {
       if (node.nodeType === 'paragraph') {
-        return node.content.map((contentNode) => contentNode.value).join('\n')
+        return node.content
+          .map((contentNode: any) => contentNode.value)
+          .join('\n')
       } else if (node.nodeType === 'embedded-asset-block') {
         const { file, description } = node.data.target.fields
         const url = `https:${file.url}`
